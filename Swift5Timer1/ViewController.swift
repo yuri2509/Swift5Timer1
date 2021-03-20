@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     
     var count = Int()
     
+    var imageArray = [UIImage]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
