@@ -44,7 +44,7 @@ class ViewController: UIViewController {
     @objc func timerUpdate(){
         
         count = count + 1
-        imageview.image = UIImage(named: "0")
+        imageview.image = imageArray[0]
         
     }
 
