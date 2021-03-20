@@ -32,6 +32,10 @@ class ViewController: UIViewController {
         //startButtonを押せなくする
         stopButton.isEnabled = true
         
+        for i in 0..<5{
+            
+        }
+        
     }
     
     func startTimer(){
