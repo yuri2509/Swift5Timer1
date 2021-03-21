@@ -41,6 +41,8 @@ class ViewController: UIViewController {
             
         }
         
+        imageview.image = UIImage(named: "0")
+        
     }
     
     func startTimer(){
