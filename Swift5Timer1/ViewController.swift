@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         count = 0
         
         //startButtonを押せなくする
-        stopButton.isEnabled = true
+        stopButton.isEnabled = false
         
         for i in 0..<5{
             
