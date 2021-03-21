@@ -64,6 +64,10 @@ class ViewController: UIViewController {
         
         //startButtonを押せなくする
         startButton.isEnabled = true
+        
+        //ここでstartTimerを呼ぶ
+        startTimer()
+        
     }
     
     
@@ -72,6 +76,9 @@ class ViewController: UIViewController {
         
         //startButtonを押せるようにする
         startButton.isEnabled = false
+        
+        //タイマーを止める
+        timer.invalidate()
         
     }
     
