@@ -55,6 +55,13 @@ class ViewController: UIViewController {
     @objc func timerUpdate(){
         
         count = count + 1
+        
+        if count > 4 {
+            
+            count = 0
+            
+        }
+        
         imageview.image = imageArray[count]
         
     }
