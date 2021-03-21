@@ -69,11 +69,16 @@ class ViewController: UIViewController {
     
     @IBAction func start(_ sender: Any) {
         
-        //startButtonを押せなくする
-        startButton.isEnabled = true
-        
         //ここでstartTimerを呼ぶ
         startTimer()
+        
+        //startButtonを押せなくする
+        startButton.isEnabled = false
+        
+        //stopButtonを押せるようにする
+        stopButton.isEnabled = true
+        
+
         
     }
     
@@ -82,7 +87,10 @@ class ViewController: UIViewController {
     @IBAction func stop(_ sender: Any) {
         
         //startButtonを押せるようにする
-        startButton.isEnabled = false
+        startButton.isEnabled = true
+        
+        //stopButtonを押せなくする
+        stopButton.isEnabled = false
         
         //タイマーを止める
         timer.invalidate()
